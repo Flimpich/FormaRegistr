@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/wood-terrace-on-the-beach-and-sun-l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head {
+    max-width: 1170px;
+    height: auto;
+    margin: 300px auto;
+}
+/*Стили формы*/
+.form {
+    color:rgba(31, 31, 31, 0.986);
+    max-width: 320px;
+    height: 300px;
+    border: 2px solid rgb(253, 247, 210);
+    border-bottom: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(21, 27, 29, 0.144);
+    position: relative;
+}
+h1 {
+    padding-top: 10px;
+    margin: 0;
+}
+.form::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 32%;
+    background: rgb(69, 193, 235);
+    bottom: 0;
+    left:0
+}
+.form::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 32%;
+    background: rgb(214, 233, 46);
+    bottom: 0;
+    right: 0;
+}
+/* Стили полей ввода*/
+.poly {
+    width: 74%;
+    height: 35px;
+    border-radius: 20px;
+    border: 0;
+    margin-top: 10px;
+    outline: none;
+    padding-left: 40px;
+}
+#polyLogin {
+    margin-top: 30px;
+    background-image: url(images/icons8-user-116.png);
+    background-repeat: no-repeat;
+    background-size: 27px 27px;
+    background-position: left 6px top 5px;
+}
+.polyPas {
+    background-image: url(images/icons8-lock-128.png);
+    background-repeat: no-repeat;
+    background-size: 27px 27px;
+    background-position: left 6px top 4px;
+}
+.polyMail {
+    background-image: url(images/icons8-email-sign-96.png);
+    background-repeat: no-repeat;
+    background-size: 29px 29px;
+    background-position: left 6px top 4px;
+}
+/*Стиль кнопкИ*/
+.submit1 {
+    position: absolute;
+    margin-top: 285px;
+    max-width: 200px;
+    padding: 5px 5px;
+    max-height:30px;
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 2px 2px 3px;
+    transition: 1s ease all;
+    background: linear-gradient(to right,rgba(69, 193, 235, 0.819), rgba(214, 233, 46, 0.827));
+}
+.submit1:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 0;
+}
