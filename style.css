@@ -60,7 +60,7 @@ h1 {
     outline: none;
     padding-left: 40px;
 }
-#polyLogin {
+.polyLogin {
     margin-top: 30px;
     background-image: url(images/icons8-user-116.png);
     background-repeat: no-repeat;
