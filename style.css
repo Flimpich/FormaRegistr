@@ -1,4 +1,5 @@
 * {
+    font-family: sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -16,17 +17,20 @@ body {
 }
 /*Стили формы*/
 .form {
-    color:rgba(31, 31, 31, 0.986);
+    color:rgba(31, 31, 31);
     max-width: 320px;
-    height: 300px;
-    border: 2px solid rgb(253, 247, 210);
+    height: auto;
+    border: 3px solid rgb(235, 204, 1);
     border-bottom: 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(21, 27, 29, 0.144);
+    background-color: rgb(255, 255, 255);
     position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 4px 4px 3px rgba(65, 65, 65, 0.986);
 }
 h1 {
     padding-top: 10px;
@@ -35,30 +39,33 @@ h1 {
 .form::before {
     position: absolute;
     content: '';
-    height: 2px;
+    height: 3px;
     width: 32%;
-    background: rgb(69, 193, 235);
+    background: rgb(235, 204, 1);
     bottom: 0;
-    left:0
+    left: -1px;
+    border-radius: 2px;
 }
 .form::after {
     position: absolute;
     content: '';
-    height: 2px;
+    height: 3px;
     width: 32%;
-    background: rgb(214, 233, 46);
+    background: rgb(235, 204, 1);
     bottom: 0;
-    right: 0;
+    right: -1px;
+    border-radius: 2px;
 }
 /* Стили полей ввода*/
 .poly {
     width: 74%;
     height: 35px;
     border-radius: 20px;
-    border: 0;
+    border: 1px solid rgb(235, 204, 1);
     margin-top: 10px;
     outline: none;
     padding-left: 40px;
+    background-color: rgb(255, 255, 255);
 }
 .polyLogin {
     margin-top: 30px;
@@ -82,7 +89,7 @@ h1 {
 /*Стиль кнопкИ*/
 .submit1 {
     position: absolute;
-    margin-top: 285px;
+    margin-top: 302px;
     max-width: 200px;
     padding: 5px 5px;
     max-height:30px;
@@ -95,4 +102,9 @@ h1 {
 .submit1:hover {
     transform: scale(1.2);
     box-shadow: 0 0 0;
+}
+p {
+    font-size: 12px;
+    margin: 25px 0 25px 0;
+    padding: 5px 0 0 0;
 }
