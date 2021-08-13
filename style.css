@@ -17,6 +17,7 @@ body {
 }
 /*Стили формы*/
 .form {
+    transition: 1s ease all;
     color:rgba(31, 31, 31);
     max-width: 320px;
     height: auto;
@@ -107,4 +108,22 @@ p {
     font-size: 12px;
     margin: 25px 0 25px 0;
     padding: 5px 0 0 0;
+}
+.registr {
+    transition: 1s ease all;
+    position: absolute;
+    color:rgba(31, 31, 31);
+    max-width: 320px;
+    height: auto;
+    top: 30%;
+    left: 39%;
+    opacity: 0;
+    border: 3px solid rgb(235, 204, 1);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 4px 4px 3px rgba(65, 65, 65, 0.986);
+}
+h2 {
+    margin: 70px auto;
+    padding: 0 20px;
 }
